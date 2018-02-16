@@ -4,7 +4,7 @@ from collections import namedtuple, defaultdict
 from pickle import dumps, loads
 from random import choice
 from time import time
-from itertools import izip_longest
+from itertools import zip_longest
 from functools import reduce
 
 from pysodium import (crypto_sign_keypair, crypto_sign, crypto_sign_open,

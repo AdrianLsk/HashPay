@@ -174,7 +174,7 @@ class Node:
             return b
 
     def _higher(self, a, b):
-        for x, y in izip_longest(self.ancestors(a), self.ancestors(b)):
+        for x, y in zip_longest(self.ancestors(a), self.ancestors(b)):
             if x == b or y is None:
                 return True
             elif y == a or x is None:
